@@ -3800,6 +3800,11 @@ a.text-theme:hover,
   .vs-header.layout2 {
     padding: 20px 0 0 0;
   }
+
+  .header-logo{
+    /* width: 150px; */
+    display: none;
+  }
 }
 .vs-header.layout3 {
  background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%);
