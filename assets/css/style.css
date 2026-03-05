@@ -91,7 +91,7 @@ Version: 1.0.0
   --vs-secondary-color: #eef2fb;
   --black-color: #0B3D2E;
   --bg-color1: #15161b;
-  --bg-color2: #0c0e12;
+  --bg-color2:  #F7F7EE ;
   --bg-color3: #101318;
   --bg-color4: #171b21;
   --bg-color5: #020203;
@@ -2181,6 +2181,7 @@ textarea.is-invalid {
   text-transform: uppercase;
   line-height: 1.35;
   margin: -0.25em 0 15px 0;
+  color: var(--black-color);
 }
 .sec-title span {
   color: var(--rating-color1);
@@ -2587,7 +2588,8 @@ textarea.is-invalid {
 }
 
 .gradient-bg {
-  background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%);
+  /* background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%); */
+   background-color: var(--bg-color2);
   opacity: 1;
   position: absolute;
   width: 100%;
@@ -2599,7 +2601,8 @@ textarea.is-invalid {
 }
 
 .space-extra-bottom{
-  background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%);
+  /* background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%); */
+  background-color: var(--bg-color2);
 }
 
 .main {
@@ -7125,8 +7128,8 @@ blockquote.vs-quote .quote-author {
 }
 
 .multi-layout1 {
-  /* background-color: var(--bg-color2); */
-  background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%);
+  background-color: var(--bg-color2);
+  /* background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%); */
 }
 
 .video-layout {
@@ -8545,7 +8548,7 @@ blockquote.vs-quote .quote-author {
   margin: 0 0 5px 0;
 }
 .product-style2.version2 .product-title a, .product-style2.version3 .product-title a {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 .product-style2.version2 .product-title a:hover, .product-style2.version3 .product-title a:hover {
   color: var(--theme-color);
