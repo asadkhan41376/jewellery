@@ -3561,6 +3561,10 @@ a.text-theme:hover,
   margin-bottom: 0;
   display: inline-block;
 }
+
+.product-title a {
+  color: var(--black-color);
+}
 .widget_shopping_cart .amount {
   display: block;
   font-weight: 600;
@@ -7591,7 +7595,7 @@ blockquote.vs-quote .quote-author {
 
 .img-box3 {
   position: absolute;
-  min-width: 830px;
+  min-width: 650px;
   height: 100%;
   top: 0;
   z-index: -1;
@@ -10305,14 +10309,18 @@ blockquote.vs-quote .quote-author {
 .latest-product .media-img {
   width: 99px;
   height: 95px;
-  /* background-color: var(--black-color); */
+  background-color: var(--bg-color1);
   margin-right: 20px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.latest-product .media-img a{
+  height: 100%;
+  width: 100%;
+  
+}
 .latest-product .media-img img {
   transition: all ease 0.4s;
   transform: scale(1.001);
