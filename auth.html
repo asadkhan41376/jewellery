@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diamond Jewellery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000;
+overflow:hidden;
+}
+
+/* GOLD BACKGROUND GLOW */
+
+body::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:#D4AF37;
+filter:blur(200px);
+opacity:.3;
+top:-200px;
+left:-200px;
+animation:moveGlow 8s infinite alternate;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:#0B3D2E;
+filter:blur(200px);
+opacity:.3;
+bottom:-200px;
+right:-200px;
+animation:moveGlow 8s infinite alternate;
+}
+
+@keyframes moveGlow{
+to{
+transform:translate(100px,100px);
+}
+}
+
+/* CARD */
+
+.container{
+position:relative;
+width:900px;
+height:550px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(20px);
+border-radius:20px;
+display:flex;
+box-shadow:0 25px 60px rgba(0,0,0,.5);
+overflow:hidden;
+}
+
+/* LEFT SIDE BRAND */
+
+.brand{
+width:45%;
+background:linear-gradient(135deg,#0B3D2E,#000);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.brand h1{
+/* font-family:"Playfair Display"; */
+color:#D4AF37;
+font-size:25px;
+margin-bottom:15px;
+letter-spacing:2px;
+}
+
+.brand p{
+opacity:.8;
+}
+
+/* RIGHT SIDE FORMS */
+.forms{
+width:55%;
+background:white;
+position:relative;
+padding:60px;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.form{
+position:absolute;
+width:80%;
+transition:.6s;
+}
+
+/* default positions */
+
+#login{
+transform:translateX(0);
+}
+
+#register{
+transform:translateX(100%);
+left: 10%;
+}
+
+/* when active */
+
+.active #login{
+transform:translateX(-100%);
+}
+
+.active #register{
+transform:translateX(0);
+}
+
+/* INPUT */
+
+.input-group{
+margin-bottom:20px;
+}
+
+.input-group input{
+width:100%;
+padding:14px 16px;
+border:1px solid #ddd;
+border-radius:8px;
+outline:none;
+transition:.3s;
+font-size:14px;
+}
+
+.input-group input:focus{
+border-color:#D4AF37;
+box-shadow:0 0 6px #D4AF37;
+}
+
+/* BUTTON */
+
+.btn{
+width:100%;
+padding:12px;
+background:#D4AF37;
+border:none;
+border-radius:8px;
+font-weight:500;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#caa532;
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+/* SWITCH */
+
+.switch{
+margin-top:20px;
+font-size:14px;
+}
+
+.switch span{
+color:#0B3D2E;
+font-weight:500;
+cursor:pointer;
+}
+
+/* REGISTER POSITION */
+
+#register{
+left:100%;
+}
+
+.active #login{
+left:-100%;
+}
+
+.active #register{
+left:10%;
+}
+
+
+.home-btn{
+position:absolute;
+top:20px;
+right:25px;
+background:#0B3D2E;
+color:white;
+padding:8px 18px;
+border-radius:20px;
+text-decoration:none;
+font-size:13px;
+transition:.3s;
+}
+
+.home-btn:hover{
+background:#D4AF37;
+color:black;
+transform:translateY(-2px);
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container" id="container">
+
+<div class="brand">
+<img src="/assets/our_image/DalilaLogo.png" width="200" alt="">
+<h1>Begin Your Diamond Journey</h1>
+<p>Experience timeless elegance and brilliance.</p>
+
+</div>
+
+
+<div class="forms">
+<a href="/" class="home-btn">Home</a>
+<form class="form" id="login">
+
+<h2>Login</h2>
+
+<div class="input-group">
+<input type="email" placeholder="Email">
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Password">
+</div>
+
+<button class="btn">Login</button>
+
+<div class="switch">
+Don't have account? 
+<span onclick="toggle()">Register</span>
+</div>
+
+</form>
+
+
+<form class="form" id="register">
+
+<h2>Create Account</h2>
+
+<div class="input-group">
+<input type="text" placeholder="Full Name">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="Email">
+</div>
+
+<div class="input-group">
+<input type="password" placeholder="Password">
+</div>
+
+<button class="btn">Register</button>
+
+<div class="switch">
+Already have account? 
+<span onclick="toggle()">Login</span>
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script>
+
+function toggle(){
+document.getElementById("container").classList.toggle("active")
+}
+
+</script>
+
+</body>
+</html>

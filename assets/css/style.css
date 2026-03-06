@@ -1852,7 +1852,7 @@ textarea.is-invalid {
   font-size: 15px;
   font-weight: 600;
   line-height: 1;
-  padding: 19px 45px;
+  /* padding: 19px 45px; */
   border-radius: 0;
   z-index: 1;
   overflow: hidden;
@@ -2579,7 +2579,8 @@ textarea.is-invalid {
   position: absolute;
   width: 100%;
   height: 1006px;
-  background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%);
+  /* background-color: var(--bg-color2); */
+  /* background: linear-gradient(90deg, #000000 10%, #0B3D2E 100%); */
   opacity: 0.4;
   top: 0;
   left: 0;
@@ -3245,7 +3246,7 @@ a.text-theme:hover,
   margin: -0.07em 0 35px 0;
   text-transform: uppercase;
   font-family: var(--title-font);
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .widget .search-form {
@@ -4768,7 +4769,7 @@ a.text-theme:hover,
 }
 
 .footer-title {
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 16px;
   font-family: var(--body-font);
   text-transform: uppercase;
@@ -8212,12 +8213,12 @@ blockquote.vs-quote .quote-author {
 .contact-info {
   font-size: 14px;
   font-weight: 600;
-  color: var(--smoke-color);
+  color: var(--theme-color);
   text-transform: capitalize;
   max-width: 82%;
 }
 .contact-info span {
-  color: var(--text-color8);
+  color: var(--black-color);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -8228,7 +8229,7 @@ blockquote.vs-quote .quote-author {
   align-items: center;
   gap: 19px;
   font-size: 14px;
-  color: var(--text-color8);
+  color: var(--black-color);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.4px;
@@ -8239,7 +8240,7 @@ blockquote.vs-quote .quote-author {
   border-bottom: 1px dashed rgba(156, 155, 155, 0.5);
 }
 .address-info a {
-  color: var(--smoke-color);
+  color: var(--theme-color);
 }
 .address-info a:hover {
   color: var(--theme-color);
@@ -9294,7 +9295,7 @@ blockquote.vs-quote .quote-author {
 }
 .product-slide-row .product-big-img {
   width: 583px;
-  height: 648px;
+  /* height: 648px; */
   /* Small devices */
 }
 @media (max-width: 767px) {
@@ -9320,7 +9321,7 @@ blockquote.vs-quote .quote-author {
   }
 }
 .product-about .product-title {
-  color: var(--white-color);
+  color: var(--black-color);
   text-transform: capitalize;
 }
 .product-about .product-rating {
@@ -9351,7 +9352,7 @@ blockquote.vs-quote .quote-author {
   font-size: 26px;
   font-weight: 500;
   letter-spacing: 1.3px;
-  color: var(--white-color);
+  color: var(--black-color);
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -10175,7 +10176,7 @@ blockquote.vs-quote .quote-author {
   letter-spacing: 0.4px;
 }
 .range-slider-area .reset-btn i {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .range-slider-area .reset-btn i {
@@ -10199,12 +10200,16 @@ blockquote.vs-quote .quote-author {
 .shop-sidebar .price-heading .title {
   display: flex;
   align-items: center;
-  color: var(--white-color);
+  color: var(--black-color);
   gap: 11px;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 0.1px;
   text-transform: uppercase;
+}
+
+.shop-sidebar .price-heading .title svg {
+ fill: var(--black-color);
 }
 .shop-sidebar .slider-acordion {
   padding: 0;
@@ -10263,7 +10268,7 @@ blockquote.vs-quote .quote-author {
   content: "";
 }
 .category-filter input[type=checkbox]:checked ~ label {
-  color: var(--white-color);
+  color: var(--theme-color);
 }
 .category-filter input[type=checkbox]:checked ~ label:before {
   background-color: var(--theme-color);
@@ -10300,7 +10305,7 @@ blockquote.vs-quote .quote-author {
 .latest-product .media-img {
   width: 99px;
   height: 95px;
-  background-color: var(--vs-border-color2);
+  /* background-color: var(--black-color); */
   margin-right: 20px;
   overflow: hidden;
   display: flex;
@@ -10311,6 +10316,9 @@ blockquote.vs-quote .quote-author {
 .latest-product .media-img img {
   transition: all ease 0.4s;
   transform: scale(1.001);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .latest-product .product-title {
@@ -10319,7 +10327,7 @@ blockquote.vs-quote .quote-author {
   border-bottom: 2px solid var(--vs-border-color2);
   padding-bottom: 9px;
   margin-bottom: 8px;
-  color: var(--smoke-color);
+  color: var(--black-color);
   letter-spacing: 0.5px;
 }
 
@@ -10328,7 +10336,7 @@ blockquote.vs-quote .quote-author {
   color: var(--body-color);
   font-weight: 700;
   margin: 0 0 -0.2em 0;
-  color: var(--smoke-color);
+  color: var(--black-color);
   letter-spacing: 0.5px;
 }
 
@@ -11016,7 +11024,7 @@ blockquote.vs-quote .quote-author {
   border: none;
   border-bottom: 1px solid var(--bg-color3);
   font-size: 14px;
-  color: var(--white-color);
+  color: var(--black-color);
   width: 55%;
 }
 
@@ -11024,7 +11032,7 @@ blockquote.vs-quote .quote-author {
 .cart_totals td:first-child {
   width: 45%;
   background-color: var(--bg-color4);
-  color: var(--smoke-color);
+  color: var(--white-color);
   letter-spacing: 0.5px;
   text-transform: capitalize;
   font-weight: 600;
@@ -11035,7 +11043,7 @@ blockquote.vs-quote .quote-author {
 .cart_totals .shipping-calculator-button {
   display: inline-block;
   border-bottom: 1px solid;
-  color: var(--white-color);
+  color: var(--black-color);
   font-weight: 700;
 }
 
@@ -11068,7 +11076,7 @@ blockquote.vs-quote .quote-author {
   display: flex;
   align-items: center;
   padding-left: 25px;
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .cart_totals .woocommerce-shipping-methods input[type=radio] ~ label::before {
@@ -11388,7 +11396,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .woocommerce-checkout-payment ul input[type=radio] ~ label {
-  color: var(--white-color);
+  color: var(--theme-color);
   font-weight: 700;
   margin-bottom: 0;
   display: flex;
@@ -11808,7 +11816,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .summary-title {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 .woocommerce-checkout-payment input[type=radio] ~ label::before {
@@ -12252,3 +12260,25 @@ span.select2-selection.select2-selection--single:focus {
 
 
 
+.about_Img{
+  width:632px;
+  height: 500px;
+}
+
+.about_Img img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.about_Img2{
+  /* width:282px; */
+  height: 531px;
+}
+
+.about_Img2 img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
