@@ -1126,7 +1126,7 @@
           y: 0, // Move to original position
           duration: 0.5,
           ease: "power2.out",
-          stagger: 0.1, // Slight delay between each item
+          stagger:0, // Slight delay between each item
         },
         "<" // Start items animation at the same time as the menu list animation
       );
@@ -1151,10 +1151,25 @@
             // Only reverse if menu is open
             tl.reverse(); // Close menu
             tl.reversed(true); // Mark timeline as reversed
+           
             menuToggle.classList.remove("active"); // Remove active class
           }
         }
       });
+
+
+      document.addEventListener("scroll", () => {
+
+  if (!tl.reversed()) {   // agar menu open hai
+    tl.reverse();         // menu close
+
+    tl.reversed(true);
+
+    menuToggle.classList.remove("active");
+
+  }
+
+});
     });
   });
 
@@ -1260,3 +1275,5 @@
 
   // End Script
 })(jQuery);
+
+
