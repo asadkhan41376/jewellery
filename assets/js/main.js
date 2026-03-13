@@ -1277,3 +1277,25 @@
 })(jQuery);
 
 
+
+
+
+  // ========================= Preloader Js Start =====================
+    var percentage = 0;
+      var LoadingCounter = setInterval(function () {
+        if (percentage <= 100) {
+          // $('#loading-screen ').css('opacity', (100 - percentage));
+          $("#loading-screen .loading-counter").text(percentage + "%");
+          $("#loading-screen .bar").css("width", (100 - percentage) / 2 + "%");
+          $("#loading-screen .progress-line").css("transform", "scale(" + percentage / 100 + ")");
+          percentage++;
+        } else {
+          $("#loading-screen").fadeOut(500);
+          setTimeout(() => {
+            $("#loading-screen").remove();
+          }, 500);
+          clearInterval(LoadingCounter);
+        }
+      }, 5);
+  // ========================= Preloader Js End=====================
+
