@@ -8164,7 +8164,7 @@ blockquote.vs-quote .quote-author {
   }
 }
 .newsletter-form .form-control {
-  height: 57px;
+  height: 65px;
   background-color: var(--bg-color1);
   border: 0;
   font-size: 14px;
@@ -12506,7 +12506,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .menu-list {
-  height: 85vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12514,17 +12514,19 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .menu-list .category-grid .category-card {
-  height: 250px;
+  height: 220px;
+  width: 100%;
 }
 
 .menu-list ul {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
   padding: 50px;
   height: 100%;
   justify-content: center;
   align-items: start;
+  border-right:1px solid white ;
 }
 /* .main-menu ul li:first-child{
   padding-top: 20px;
@@ -12534,6 +12536,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 30px;
   font-weight: 500;
   color: white;
+  font-family:var(--title-font);
 }
 
 .category-section {
@@ -12838,3 +12841,98 @@ span.select2-selection.select2-selection--single:focus {
         transform: rotate(360deg);
     }
 }
+
+
+
+.lux-product-card{
+background:white;
+border:1px solid #eee;
+transition:0.4s;
+overflow:hidden;
+margin-bottom:30px;
+}
+
+.lux-product-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* IMAGE AREA FIX */
+.lux-img{
+position:relative;
+height:260px;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+/* IMAGE SIZE FIX */
+.lux-img img{
+max-height:220px;
+width:auto;
+transition:0.4s;
+}
+
+.lux-product-card:hover img{
+transform:scale(1.08);
+}
+
+/* HOVER BUTTONS */
+.lux-btns{
+position:absolute;
+bottom:-60px;
+left:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:10px;
+transition:0.4s;
+}
+
+.lux-product-card:hover .lux-btns{
+bottom:15px;
+}
+
+.view-btn,
+.cart-btn{
+padding:6px 14px;
+font-size:14px;
+text-decoration:none;
+}
+
+.view-btn{
+background:white;
+border:1px solid #0B3D2E;
+color:#0B3D2E;
+}
+
+.cart-btn{
+background:#0B3D2E;
+color:white;
+}
+
+.cart-btn:hover{
+background:#D4AF37;
+color:black;
+}
+
+.lux-content{
+padding:15px;
+text-align:center;
+}
+
+.lux-content h3{
+color:#0B3D2E;
+font-size:17px;
+margin-bottom:5px;
+}
+
+.lux-price{
+color:#D4AF37;
+font-weight:600;
+font-size:17px;
+}
+
+
+/* ============================== */
