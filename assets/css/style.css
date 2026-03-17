@@ -1689,7 +1689,7 @@ textarea.is-invalid {
   font-weight: 600;
 }
 .vs-mobile-menu ul li a:before {
-  content: "\f105";
+  /* content: "\f105"; */
   font-family: var(--icon-font);
   position: relative;
   left: 0;
@@ -3906,7 +3906,7 @@ a.text-theme:hover,
   }
 }
 .header-logo.style3 {
-  padding: 10px 0;
+  padding: 5px 0;
   position: relative;
   z-index: 1;
   /* Large devices */
@@ -9828,9 +9828,9 @@ blockquote.vs-quote .quote-author {
   padding: 13px 40px;
   background-color: var(--black-bg);
   color: var(--text-color4);
-  font-weight: 800;
+  font-weight: 400;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1.4px;
   min-height: 57px;
   display: inline-flex;
@@ -12936,3 +12936,8 @@ font-size:17px;
 
 
 /* ============================== */
+
+.mobile_Nav_carousel{
+  width: 90px;
+  height: 100px !important;
+}
